@@ -11,20 +11,18 @@ export const IntroScreen: React.FC<IntroScreenProps> = ({ onEnter }) => {
       id="intro-screen"
       className="fixed inset-0 z-50 bg-[#0b0f19] flex flex-col items-center justify-center p-4 text-center select-none"
     >
-      {/* Cyber animated rings */}
-      <div className="relative flex items-center justify-center mb-8">
+      {/* Cyber animated rings & Official App Logo */}
+      <div className="relative flex items-center justify-center mb-6">
         <div
-          className="w-28 h-28 rounded-full border-[3px] border-transparent border-t-cyan-400 border-b-blue-600 animate-spin"
-          style={{ animationDuration: '1.4s' }}
-        />
-        <div
-          className="w-20 h-20 rounded-full border-2 border-dashed border-cyan-400/40 animate-spin absolute"
-          style={{ animationDuration: '4s', animationDirection: 'reverse' }}
-        />
-        <div className="w-12 h-12 rounded-full border border-indigo-500/50 flex items-center justify-center absolute">
-          <Activity className="w-5 h-5 text-cyan-400 animate-pulse" />
+          className="w-28 h-28 rounded-3xl border-[3px] border-cyan-400/40 shadow-2xl shadow-cyan-500/30 overflow-hidden relative group"
+        >
+          <img
+            src="/icon.png"
+            alt="Speed-TessApp Logo"
+            className="w-full h-full object-cover"
+          />
         </div>
-        <div className="w-4 h-4 rounded-full bg-cyan-400 animate-ping absolute" />
+        <div className="w-32 h-32 rounded-3xl border-2 border-dashed border-cyan-400/50 animate-pulse absolute pointer-events-none -inset-2" />
       </div>
 
       {/* Speed-T Title */}

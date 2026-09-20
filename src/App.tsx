@@ -183,14 +183,15 @@ export default function App() {
         {/* HEADER */}
         <header className="bg-gray-900/85 backdrop-blur-xl border border-white/10 p-4 rounded-2xl flex flex-wrap justify-between items-center gap-4 shadow-xl">
           <div className="flex items-center gap-3">
-            <div
-              className="w-3.5 h-3.5 rounded-full animate-ping"
-              style={{ backgroundColor: hexColorString }}
+            <img
+              src="/favicon.png"
+              alt="Speed-TessApp Favicon"
+              className="w-10 h-10 rounded-xl border border-cyan-400/40 shadow-lg shadow-cyan-500/20 object-contain bg-white/5 p-1 shrink-0"
             />
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="text-xl md:text-2xl font-black bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-400 bg-clip-text text-transparent">
-                  SPEED-T
+                <h1 className="text-xl md:text-2xl font-black bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-400 bg-clip-text text-transparent tracking-wide">
+                  SPEED-TESSAPP
                 </h1>
                 {isProMember && (
                   <span className="bg-gradient-to-r from-amber-500 to-yellow-500 text-black font-extrabold text-[9px] px-1.5 py-0.2 rounded font-mono">
