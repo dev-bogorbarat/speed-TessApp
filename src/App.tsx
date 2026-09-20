@@ -8,7 +8,7 @@ import { VipCertificateModal } from './components/VipCertificateModal';
 import { VipModal } from './components/VipModal';
 import { TestHistoryPanel } from './components/TestHistoryPanel';
 import { ShapeType, VisualFxMode, WarpMode, NetworkMetrics, SpeedTestHistoryItem } from './types';
-import { Crown, Sparkles, CheckCircle2, Award, Gamepad2, History } from 'lucide-react';
+import { Crown, Sparkles, CheckCircle2, Award, Gamepad2, History, Download } from 'lucide-react';
 import { cyberSound } from './utils/cyberSound';
 
 export default function App() {
@@ -412,6 +412,16 @@ export default function App() {
             <span className="text-cyan-400 font-semibold">Anak bangsa</span> • Speed-T Network Engine
           </div>
           <div className="flex items-center gap-3 text-[11px]">
+            <a
+              id="download-project-zip-btn"
+              href="/speed-t-project.zip"
+              download="speed-t-project.zip"
+              className="px-2.5 py-1 bg-cyan-950/70 hover:bg-cyan-900/80 text-cyan-300 border border-cyan-700/50 rounded-lg flex items-center gap-1.5 transition font-mono hover:scale-105 active:scale-95"
+              title="Download Source Code Project (.ZIP)"
+            >
+              <Download className="w-3.5 h-3.5 text-cyan-400" />
+              <span>Unduh Project (.ZIP)</span>
+            </a>
             <button
               onClick={() => setShowIntro(true)}
               className="text-gray-400 hover:text-cyan-300 transition cursor-pointer"
