@@ -1,0 +1,6 @@
+{
+  "name": "Speed-T - Network & 3D Speed Test",
+  "description": "Interactive internet speed test and 3D visualizer suite created by Anak bangsa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
